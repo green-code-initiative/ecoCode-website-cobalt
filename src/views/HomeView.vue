@@ -13,7 +13,7 @@ import AppSection from "@/components/shared/AppSection.vue";
       title="Equipe Cobalt - Réduisons l'impact environnemental et social des solutions numériques"
       sub-title="ecoCode est un outil Open Source basé sur un référentiel de règles d'éco-conception logicielle."
   >
-    <video preload="none" autoplay muted src="@/assets/video/autoplay-test-video.mp4"></video>
+    <video preload="metadata" autoplay muted src="@/assets/video/autoplay-test-video.mp4"></video>
     <img class="hero" src="@/assets/img/logo-large.webp" width="358" height="204" alt="ecoCode large logo"/>
   </AppHero>
 
