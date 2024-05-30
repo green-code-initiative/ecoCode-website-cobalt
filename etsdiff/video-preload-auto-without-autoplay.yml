@@ -1,0 +1,26 @@
+details:
+- name: autoplay
+  energy: 11.65251
+  transfer: 15253361
+  storage: 16326153
+- name: autoplay
+  energy: 9.018510000000001
+  transfer: 581
+  storage: 16326153
+- name: autoplay
+  energy: 9.88163
+  transfer: 424
+  storage: 16326153
+- name: autoplay
+  energy: 8.13646
+  transfer: 424
+  storage: 16326153
+- name: autoplay
+  energy: 8.74044
+  transfer: 1407
+  storage: 16326153
+total:
+- name: autoplay
+  energy: 9.018510000000001
+  transfer: 15253361
+  storage: 16326153

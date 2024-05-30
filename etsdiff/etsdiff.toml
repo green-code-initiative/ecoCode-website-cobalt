@@ -1,0 +1,26 @@
+[Scheduler]
+type = "StageredScheduler"
+nb_iteration = 5 
+
+[Services]
+
+[Services.backend]
+process_name = "npm"
+ports = [8086]
+storage_paths = [ "/home/vincent/dev/ecoCode/ecocode24/ecoCode-website-cobalt/src" ]
+
+[Services.client]
+process_name = "firefox"
+#prepare = "python3 lauch_as_daemon.py python3 ./test_autoplay.py /tmp/autoplay"
+prepare = "python3 run_daemon.py /tmp/etsdiff/autoplay.prepare"
+#release = "touch /tmp/autoplay.release"
+release = "python3 run_daemon.py /tmp/etsdiff/autoplay.release"
+
+[Tests]
+
+[Tests.autoplay]
+type = "SystemCall"
+#command_line = "sleep 1"
+services_names = [ "client", "backend" ]
+#command_line = "touch /tmp/autoplay.run"
+command_line = "python3 run_daemon.py /tmp/etsdiff/autoplay.run"
